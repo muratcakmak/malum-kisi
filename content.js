@@ -177,7 +177,7 @@ const REPLACEMENT_IMAGE =
 
           detections.forEach((detection) => {
 
-            if (detection.detection._score < 0.7) return;
+            if (detection.detection._score < 0.8) return;
             const bestMatch = faceMatcher.findBestMatch(
               malumKisiDescriptor,
               detections.map((d) => d.descriptor)
